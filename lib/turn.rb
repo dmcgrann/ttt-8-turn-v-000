@@ -49,6 +49,7 @@ def turn(board)
       move(board, index, character = "X")
       display_board(board)
     else
+      "Try agian"
       turn(board)
   end
 end
