@@ -50,7 +50,6 @@ def turn(board)
         puts move(board, index)
         return display_board(board)
     else
-      puts "Try again."
       turn(board)
     end
   end
