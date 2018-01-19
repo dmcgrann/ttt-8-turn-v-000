@@ -45,9 +45,8 @@ def turn(board)
   user_input = gets.strip
   index = 0
   input_to_index(user_input)
-    while valid_move?(board, index)
-      if index == 0
-        puts move(board, index)
+    if valid_move?(board, index)
+        puts move(board, index, character)
         return display_board(board)
     else
       turn(board)
