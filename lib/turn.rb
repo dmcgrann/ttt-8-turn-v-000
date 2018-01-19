@@ -43,10 +43,12 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   user_input = gets.chomp
-  index =
+  index = 0
   input_to_index(user_input)
-    if valid_move?(board, index)
-      move(board, index)
+    while valid_move?(board, index)
+      if index == 0
+        puts move(board, index, character)
+        return display_board(board)
     else
       puts "Try again."
       turn(board)
