@@ -47,7 +47,7 @@ def turn(board)
   input_to_index(user_input)
     while valid_move?(board, index)
       if index == 0
-        puts move(board, index, character)
+        puts move(board, index)
         return display_board(board)
     else
       puts "Try again."
